@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map &middot; Ancestral Archive</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">&#9670; Ancestral Archive</a>
+    <div class="nav-links">
+      <a href="photographs.html">Photographs</a>
+      <a href="oral-histories.html">Oral Histories</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="map.html" class="nav-active">Map</a>
+    </div>
+    <a href="contribute.html" class="btn-contribute">Contribute</a>
+  </nav>
+
+  <div class="map-layout">
+    <aside class="map-sidebar">
+      <h2 class="sidebar-title">Filter locations</h2>
+      <div class="filter-group">
+        <label class="filter-item">
+          <input type="checkbox" value="photo" checked class="filter-check"> 
+          <span class="filter-dot filter-dot--photo"></span>
+          Vintage photos
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" value="audio" checked class="filter-check">
+          <span class="filter-dot filter-dot--audio"></span>
+          Oral histories
+        </label>
+        <label class="filter-item">
+          <input type="checkbox" value="video" checked class="filter-check">
+          <span class="filter-dot filter-dot--video"></span>
+          Cinematic videos
+        </label>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div id="location-list">
+        <p class="sidebar-hint">Click a pin on the map to see details here.</p>
+      </div>
+    </aside>
+
+    <div id="map" aria-label="Interactive heritage map"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="../js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline &middot; Ancestral Archive</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/timeline.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">&#9670; Ancestral Archive</a>
+    <div class="nav-links">
+      <a href="photographs.html">Photographs</a>
+      <a href="oral-histories.html">Oral Histories</a>
+      <a href="timeline.html" class="nav-active">Timeline</a>
+      <a href="map.html">Map</a>
+    </div>
+    <a href="contribute.html" class="btn-contribute">Contribute</a>
+  </nav>
+
+  <main class="timeline-page">
+    <header class="timeline-header">
+      <p class="hero-overline">A village through time</p>
+      <h1 class="hero-title">1900 &ndash; present</h1>
+      <p class="hero-sub">Scroll through a century of change. Each milestone is a memory.</p>
+    </header>
+
+    <div class="timeline-scroll-wrapper">
+      <div class="timeline-axis" aria-label="Village history timeline from 1900 to present">
+        <div class="timeline-line"></div>
+        <div class="timeline-events" id="timeline-events"></div>
+      </div>
+    </div>
+
+    <div class="event-detail" id="event-detail" aria-live="polite">
+      <p class="sidebar-hint" style="text-align:center;">Select a milestone above to read more.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-copy">&copy; 2025 Ancestral Archive &middot; All rights reserved by Shazid</p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="contribute.html">Contribute</a>
+    </div>
+  </footer>
+
+  <script src="../js/timeline.js"></script>
+</body>
+</html>
